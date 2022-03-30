@@ -7,8 +7,8 @@ public class Actor extends Person {
 
 
     // constructor of Actor class
-    public Actor(String name, double pay, double earned, String role) {
-        super(name, pay, earned);
+    public Actor(String name, double pay, String role) {
+        super(name, pay);
         this.role = role;
     }
 
@@ -23,7 +23,8 @@ public class Actor extends Person {
     }
 
 
-    // actor makes money based on movie profits?
+    /* actors make money based on their contracts (how much actor is on set) --
+            amounts will be set for each actor listed */
     public double pay(){
         return pay;
     }

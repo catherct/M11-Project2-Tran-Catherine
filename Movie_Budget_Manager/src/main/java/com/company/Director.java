@@ -4,8 +4,8 @@ public class Director extends Crew {
 
 
     // constructor of Director class
-    public Director(String name, double pay, double earned, String department) {
-        super(name, pay, earned, department);
+    public Director(String name, double pay, String department) {
+        super(name, pay, department);
     }
 
 

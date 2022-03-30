@@ -5,11 +5,11 @@ public abstract class Person {
     // properties of base class Person
     protected String name;
     protected double pay;
-    protected double earned; // what is earned?
+    protected double earned;
 
 
     // constructor of Person class
-    public Person(String name, double pay, double earned) {
+    public Person(String name, double pay) {
         this.name = name;
         this.pay = pay;
         this.earned = 0;

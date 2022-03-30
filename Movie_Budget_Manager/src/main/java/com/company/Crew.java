@@ -7,8 +7,8 @@ public class Crew extends Person {
 
 
     // constructor of the Crew class
-    public Crew(String name, double pay, double earned, String department) {
-        super(name, pay, earned);
+    public Crew(String name, double pay, String department) {
+        super(name, pay);
         this.department = department;
     }
 

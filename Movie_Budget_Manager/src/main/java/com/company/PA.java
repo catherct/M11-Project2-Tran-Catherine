@@ -7,8 +7,8 @@ public class PA extends Crew {
 
 
     // constructor of PA class
-    public PA(String name, double pay, double earned, String department, int hoursWorked) {
-        super(name, pay, earned, department);
+    public PA(String name, double pay, String department, int hoursWorked) {
+        super(name, pay, department);
         this.hoursWorked = hoursWorked;
     }
 

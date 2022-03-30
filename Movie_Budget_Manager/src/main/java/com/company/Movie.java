@@ -11,7 +11,7 @@ public class Movie {
     private List <Actor> castMembers;
     private List <Crew> crewMembers;
     private int budget;
-    private int moneySpent; // moneySpent will be calculated via a method // "0"
+    private int moneySpent;
     private int moneyEarned;
     private int profits;
 
@@ -95,16 +95,30 @@ public class Movie {
     }
 
 
-    // method to calculate profit
-    public int updateProfits(int budget, int moneyEarned, int moneySpent){
-        int profits = budget + moneyEarned - moneySpent; // moneyEarned here is the money grossed at box office
-        return profits;
+    // payday method pays all actors and crew and adds total to moneySpent (calculates spent)
+//    public void payday(int moneyEarned, int moneySpent){
+//
+//        for (int i = 0; i < castMembers.length; i++) {
+//            moneySpent;           // how do you incorporate pay parameter?
+//        }                                     (value passed in)
+//
+//        for (int i = 0; i < crewMembers.length; i++) {
+//            moneySpent;
+//        }
+//
+//    }
+
+
+    // method to calculate percent of budget spent on movie
+    public int percentSpent(int budget, int moneySpent){
+        return moneySpent / budget;
     }
 
-    // payday method pays all actors and crew and adds total to moneySpent
-//    public void payday(int moneyEarned, int moneySpent){
-//        double total =
-//        return total + moneySpent;
-//    }
+
+    // method to calculate profit
+    public int updateProfits(int budget, int moneyEarned, int moneySpent){
+        profits = budget + moneyEarned - moneySpent;
+        return profits; // moneyEarned here is the money grossed at box office
+    }
 
 }
