@@ -9,7 +9,7 @@ public class Crew extends Person {
     // constructor of the Crew class
     public Crew(String name, double pay, double earned, String department) {
         super(name, pay, earned);
-        department = department;
+        this.department = department;
     }
 
 

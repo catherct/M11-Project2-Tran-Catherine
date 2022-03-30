@@ -12,21 +12,20 @@ public class Movie {
     private List <Crew> crewMembers;
     private int budget;
     private int moneySpent; // moneySpent will be calculated via a method // "0"
-    private int moneyEarned; // moneyEarned is total grossed from box offices?
-    private int profits; // profits will be calculated via a method (moneyEarned + budget - moneySpent)
+    private int moneyEarned;
+    private int profits;
 
 
     // constructor of Movie class (allows user to call new Movie object)
-    public Movie(String genre, Director director, List<Actor> castMembers, List<Crew> crewMembers, int budget,
-                 int moneySpent, int moneyEarned, int profits) {
-        genre = genre;
-        director = director;
-        castMembers = castMembers;
-        crewMembers = crewMembers;
-        budget = budget;
-        moneySpent = moneySpent;
-        moneyEarned = moneyEarned;
-        profits = profits;
+    public Movie(String genre, Director director, List<Actor> castMembers, List<Crew> crewMembers, int budget) {
+        this.genre = genre;
+        this.director = director;
+        this.castMembers = castMembers;
+        this.crewMembers = crewMembers;
+        this.budget = budget;
+        this.moneySpent = 0;
+        this.moneyEarned = 0;
+        this.profits = 0;
     }
 
 
@@ -98,12 +97,14 @@ public class Movie {
 
     // method to calculate profit
     public int updateProfits(int budget, int moneyEarned, int moneySpent){
-        return budget + moneyEarned - moneySpent; // moneyEarned here is the money grossed at box office
+        int profits = budget + moneyEarned - moneySpent; // moneyEarned here is the money grossed at box office
+        return profits;
     }
 
-    // payday method pays all actors and crew + adds total to moneySpent
-//    public int payday(int moneyEarned, int moneySpent){
-//        return moneyEarned - moneySpent;
+    // payday method pays all actors and crew and adds total to moneySpent
+//    public void payday(int moneyEarned, int moneySpent){
+//        double total =
+//        return total + moneySpent;
 //    }
 
 }

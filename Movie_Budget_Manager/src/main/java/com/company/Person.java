@@ -2,16 +2,21 @@ package com.company;
 
 public abstract class Person {
 
+    // properties of base class Person
     protected String name;
     protected double pay;
     protected double earned; // what is earned?
 
+
+    // constructor of Person class
     public Person(String name, double pay, double earned) {
-        name = name;
-        pay = pay;
-        earned = earned;
+        this.name = name;
+        this.pay = pay;
+        this.earned = 0;
     }
 
+
+    // getters and setters
     public String getName() {
         return name;
     }
@@ -36,6 +41,8 @@ public abstract class Person {
         this.earned = earned;
     }
 
+
+    // abstract pay method
     public abstract double pay();
 
 }

@@ -9,7 +9,7 @@ public class Actor extends Person {
     // constructor of Actor class
     public Actor(String name, double pay, double earned, String role) {
         super(name, pay, earned);
-        role = role;
+        this.role = role;
     }
 
 
