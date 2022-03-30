@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Movie_Budget_Manager" />
+
+
       </profile>
     </annotationProcessing>
   </component>
