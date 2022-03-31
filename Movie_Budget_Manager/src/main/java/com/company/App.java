@@ -24,7 +24,7 @@ public class App {
         // instantiate list of crew objects
         List<Crew> crewMembers = new ArrayList<>();
 
-            Crew productionAssistant = new PA("Smitty McSmittysen", 18.00,"production", 4320);
+            PA productionAssistant = new PA("Smitty McSmittysen", 18.00,"production", 4320);
             Crew firstProducer = new Crew("Roger Birnbaum", 100000, "production");
             Crew secondProducer = new Crew("Jonathan Glickman", 100000, "production");
             Crew thirdProducer = new Crew("Arthur M. Sarkissian", 100000, "production");
