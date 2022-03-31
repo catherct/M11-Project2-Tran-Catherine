@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Movie {
@@ -98,15 +97,17 @@ public class Movie {
     // payday method pays all actors and crew and adds total to moneySpent (calculates spent)
     public void payday() {
 
-        for (int i = 0; i < castMembers.length; i++) {
-            int payCast = ;
+        for (int i = 0; i < castMembers.size(); i++) {
+            Actor actor = castMembers.get(i);
+            moneySpent += actor.pay;
         }
 
-        for (int i = 0; i < crewMembers.length; i++) {
-            int payCrew = ;
+        for (int i = 0; i < crewMembers.size(); i++) {
+            Crew crew = crewMembers.get(i);
+            moneySpent += crew.pay;
         }
 
-
+        moneySpent += director.pay;
 
     }       // moneySpent should total to 46,077,760 (crew, director, cast)
 
@@ -118,8 +119,8 @@ public class Movie {
 
 
     // method to calculate profit
-    public int updateProfits(int budget, int moneyEarned, int moneySpent){
-        moneyEarned = 347300000; // total grossed in box office sales ( $347.3M )
+    public int updateProfits(int budget, int moneySpent){
+        int moneyEarned = 347300000; // total grossed in box office sales ( $347.3M )
         profits = budget + moneyEarned - moneySpent;
         return profits;
     }

@@ -24,7 +24,7 @@ public class App {
         // instantiate list of crew objects
         List<Crew> crewMembers = new ArrayList<>();
 
-            PA productionAssistant = new PA("Smitty McSmittysen", 18.00,"production", 4320);
+            Crew productionAssistant = new PA("Smitty McSmittysen", 18.00,"production", 4320);
             Crew firstProducer = new Crew("Roger Birnbaum", 100000, "production");
             Crew secondProducer = new Crew("Jonathan Glickman", 100000, "production");
             Crew thirdProducer = new Crew("Arthur M. Sarkissian", 100000, "production");
@@ -46,7 +46,7 @@ public class App {
 
         System.out.println(productionAssistant.payday()); // how much the PA earned
         System.out.println(RushHour2.percentSpent(90000000, 46077760)); // money spent out of the total budget
-        System.out.println(RushHour2.updateProfits(90000000, 347300000, 46077760)); // profits
+        System.out.println(RushHour2.updateProfits(90000000, 46077760)); // profits
         System.out.println(director.pay()); // how much the director made in royalties
 
     }
