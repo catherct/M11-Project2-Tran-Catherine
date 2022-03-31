@@ -107,7 +107,7 @@ public class Movie {
             moneySpent += crew.pay;
         }
 
-        moneySpent += director.pay;
+            moneySpent += director.pay;
     }
 
 
