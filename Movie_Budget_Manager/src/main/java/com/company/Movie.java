@@ -108,13 +108,6 @@ public class Movie {
         }
 
         moneySpent += director.pay;
-
-    }       // moneySpent should total to 46,077,760 (crew, director, cast)
-
-
-    // method to calculate percent of budget spent on movie
-    public int percentSpent(int budget, int moneySpent){
-        return moneySpent / budget;
     }
 
 
