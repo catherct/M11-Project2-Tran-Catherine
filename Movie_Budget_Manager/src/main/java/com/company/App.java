@@ -18,7 +18,7 @@ public class App {
         // instantiate list of actor objects
         List<Actor> castMembers = new ArrayList<>();
 
-            Actor firstLead = new Actor("Jackie Chan", 15000000, "lead actor");
+            Actor firstLead = new Actor("Jackie Chan", 20000000, "lead actor");
             Actor secondLead = new Actor("Chris Tucker", 20000000, "lead actor");
 
             castMembers.add(firstLead);
@@ -49,8 +49,8 @@ public class App {
 
 
         System.out.println(productionAssistant.payday()); // how much the PA earned
-        System.out.println(RushHour2.percentSpent(90000000, )); // money spent out of the total budget
-        System.out.println(RushHour2.updateProfits(90000000, )); // profits
+        System.out.println(RushHour2.percentSpent(90000000, 46077760)); // money spent out of the total budget
+        System.out.println(RushHour2.updateProfits(90000000, 347300000, 46077760)); // profits
         System.out.println(director.pay()); // how much the director made in royalties
 
     }

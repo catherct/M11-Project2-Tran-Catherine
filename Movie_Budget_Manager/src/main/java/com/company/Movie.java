@@ -96,17 +96,19 @@ public class Movie {
 
 
     // payday method pays all actors and crew and adds total to moneySpent (calculates spent)
-//    public void payday(int moneyEarned, int moneySpent){
-//
-//        for (int i = 0; i < castMembers.length; i++) {
-//            moneySpent;           // how do you incorporate pay parameter?
-//        }                                     (value passed in)
-//
-//        for (int i = 0; i < crewMembers.length; i++) {
-//            moneySpent;
-//        }
-//
-//    }
+    public void payday() {
+
+        for (int i = 0; i < castMembers.length; i++) {
+            int payCast = ;
+        }
+
+        for (int i = 0; i < crewMembers.length; i++) {
+            int payCrew = ;
+        }
+
+
+
+    }       // moneySpent should total to 46,077,760 (crew, director, cast)
 
 
     // method to calculate percent of budget spent on movie
@@ -117,8 +119,9 @@ public class Movie {
 
     // method to calculate profit
     public int updateProfits(int budget, int moneyEarned, int moneySpent){
+        moneyEarned = 347300000; // total grossed in box office sales ( $347.3M )
         profits = budget + moneyEarned - moneySpent;
-        return profits; // moneyEarned here is the money grossed at box office
+        return profits;
     }
 
 }
