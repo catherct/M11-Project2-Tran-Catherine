@@ -7,13 +7,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        /* SHOULD I LEAVE OUT CAST AND CREW'S PAY IF THEY'RE NOT PAID AT AN HOURLY RATE?
-                Because I will have to do the payday method anyway... (and what is moneyEarned vs moneySpent?)
-         */
-
         // instantiate director object
         Director director = new Director("Brett Ratner", 5000000, "director");
-        // leave out director's pay??? –– will print out how much director made in royalties later
+
 
         // instantiate list of actor objects
         List<Actor> castMembers = new ArrayList<>();
