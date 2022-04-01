@@ -44,9 +44,10 @@ public class App {
                 90000000);
 
 
-        System.out.println(productionAssistant.payday()); // how much the PA earned
+        RushHour2.payday(); // calling payday method
+            System.out.println(productionAssistant.pay(4320)); // how much the PA earned
         System.out.println(RushHour2.getMoneySpent()); // money spent out of the total budget
-        System.out.println(RushHour2.updateProfits(90000000, 46077760)); // profits
+        System.out.println(RushHour2.updateProfits(90000000, 46000018)); // profits
         System.out.println(director.pay()); // how much the director made in royalties
 
     }

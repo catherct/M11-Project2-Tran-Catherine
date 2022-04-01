@@ -99,15 +99,18 @@ public class Movie {
 
         for (int i = 0; i < castMembers.size(); i++) {
             Actor actor = castMembers.get(i);
-            moneySpent += actor.pay;
+            moneySpent += actor.getPaid();
+            actor.setEarned(actor.getPaid());   // updating individual earnings
         }
 
         for (int i = 0; i < crewMembers.size(); i++) {
             Crew crew = crewMembers.get(i);
-            moneySpent += crew.pay;
+            moneySpent += crew.getPaid();
+            crew.setEarned(crew.getPaid());     // updating individual earnings
         }
 
-            moneySpent += director.pay;
+            moneySpent += director.getPaid();
+            director.setEarned(director.getPaid());     // updating individual earnings
     }
 
 
